@@ -1,0 +1,32 @@
+@import "bootstrap-variables.scss";
+@import "bootstrap-sprockets.scss";
+@import "bootstrap.scss";
+
+body {
+  padding-top: $navbar-height + 10px;
+}
+
+.page-header {
+  a.btn {
+    float: right;
+  }
+
+  a.btn + a.btn {
+    margin-right: 8px;
+  }
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: initial;
+  height: initial;
+  margin-top: 7px;
+}
+
+@font-face{
+  font-family:'Glyphicons Halflings';
+  src: image-url("bootstrap/glyphicons-halflings-regular.eot");
+  src: image-url("bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),
+       image-url("bootstrap/glyphicons-halflings-regular.woff") format("woff"),
+       image-url("bootstrap/glyphicons-halflings-regular.ttf") format("truetype"),
+       image-url("bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg")
+}
