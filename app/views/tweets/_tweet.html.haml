@@ -5,7 +5,7 @@
   .media-body
     %h4.media-heading.top
       = tweet.text
-      = link_to tweet.user.email, tweets_path
+      = link_to tweet.user.email, "/users/index?user_id=#{tweet.user.id}"
       •
       = distance_of_time_in_words_to_now(tweet.created_at)
     %p

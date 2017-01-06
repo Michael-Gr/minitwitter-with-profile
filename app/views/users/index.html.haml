@@ -1,0 +1,7 @@
+#tweet.container
+  .table-responsive
+    %table.table.table-striped.table-bordered.table-hover
+      %tbody
+        - @tweets.each_with_index do |tweet, index|
+          %tr
+            = render tweet
