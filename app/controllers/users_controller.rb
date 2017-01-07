@@ -3,7 +3,9 @@ class UsersController < ApplicationController
     user_id = params["user_id"]
 
     if user_id
-      @tweets = Tweet.all.where(id: user_id)
+      @tweets = Tweet.all.order("created_at DESC").where(user_id: user_id)
+      split_name = @tweets[0].user.email.split("@")
+      @user_name = split_name[0]
     # # More user dropdown code
     # elsif user
     #   @tweets = user.tweets

@@ -32,8 +32,6 @@
             %li
               = link_to "Home", tweets_path
             %li
-              = link_to "Users", "/users/index"
-            %li
               = link_to new_tweet_path do
                 New Tweet
             %li.navbar-text.toggle
@@ -46,9 +44,6 @@
               %form.navbar-form{:role => "search"}
                 .input-group
                   %input.form-control{:id => "q", :name => "q", :placeholder => "Search Tweets", :type => "text"}/
-                  .input-group-btn
-                    %button.btn.btn-default{:type => "submit"}
-                      %i.glyphicon.glyphicon-search
 
 
           %ul.nav.navbar-nav.navbar-right

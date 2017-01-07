@@ -16,6 +16,14 @@ tweets = Tweet.create(
     { user: gavin, text: 'Tweet 1' },
     { user: jason, text: 'Tweet 2' },
     { user: mark, text: 'Tweet 3' },
-    { user: holly, text: 'Tweet 4' }
+    { user: holly, text: 'Tweet 4' },
+    { user: gavin, text: 'Tweet 11' },
+    { user: jason, text: 'Tweet 22' },
+    { user: mark, text: 'Tweet 33' },
+    { user: holly, text: 'Tweet 44' },
+    { user: gavin, text: 'Tweet 111' },
+    { user: jason, text: 'Tweet 222' },
+    { user: mark, text: 'Tweet 333' },
+    { user: holly, text: 'Tweet 444' }
   ]
 )
